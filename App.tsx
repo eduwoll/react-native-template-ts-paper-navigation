@@ -9,6 +9,7 @@
  */
 import React, { Suspense } from "react";
 import { View } from "react-native";
+import CodePush from "react-native-code-push";
 import { ActivityIndicator, useTheme } from "react-native-paper";
 import { useAuth } from "./src/context/auth-context";
 
@@ -30,4 +31,11 @@ const App = () => {
   );
 };
 
-export default App;
+const CodePushedApp = __DEV__
+  ? App
+  : CodePush({
+      checkFrequency: CodePush.CheckFrequency.ON_APP_START,
+      installMode: CodePush.InstallMode.IMMEDIATE,
+    })(App);
+
+export default CodePushedApp;

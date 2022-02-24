@@ -1,7 +1,18 @@
 import React from "react";
 
+export interface VideoInfo {
+  link: string;
+  extension: string;
+}
+
+export interface VideoInfoResponse {
+  video: VideoInfo;
+  audio: VideoInfo;
+  preview: VideoInfo;
+}
+
 interface Video {
-  source: string | null;
+  source: null | string | { video: string; audio: string; previewUrl: string };
   sourceStartTime: number;
   sourceEndTime: number;
   intro?: string;
@@ -11,7 +22,7 @@ interface Video {
 
 type VideoContextType = {
   videoState: Video;
-  setSource: (source: string) => void;
+  setSource: (source: Video["source"]) => void;
   setSourceTimes: (sourceStartTime: number, sourceEndTime: number) => void;
   setComposition: (intro: string, outro: string) => void;
   setOutput: (output: string | null) => void;
@@ -32,7 +43,7 @@ const VideoContext = React.createContext<VideoContextType | null>(null);
 
 function VideoProvider({ children }: Props) {
   const [videoState, setVideoState] = React.useState<Video>(initialState);
-  const setSource = (source: string) => {
+  const setSource = (source: typeof videoState.source) => {
     setVideoState({ ...videoState, source });
   };
   const setSourceTimes = (sourceStartTime: number, sourceEndTime: number) => {

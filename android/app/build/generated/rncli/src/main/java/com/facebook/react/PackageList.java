@@ -11,12 +11,24 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// @notifee/react-native
+import io.invertase.notifee.NotifeePackage;
+// @react-native-community/clipboard
+import com.reactnativecommunity.clipboard.ClipboardPackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // @react-native-community/slider
 import com.reactnativecommunity.slider.ReactSliderPackage;
+// appcenter
+import com.microsoft.appcenter.reactnative.appcenter.AppCenterReactNativePackage;
+// appcenter-analytics
+import com.microsoft.appcenter.reactnative.analytics.AppCenterReactNativeAnalyticsPackage;
+// appcenter-crashes
+import com.microsoft.appcenter.reactnative.crashes.AppCenterReactNativeCrashesPackage;
 // react-native-background-downloader
 import com.eko.RNBackgroundDownloaderPackage;
+// react-native-code-push
+import com.microsoft.codepush.react.CodePush;
 // react-native-document-picker
 import com.reactnativedocumentpicker.DocumentPickerPackage;
 // react-native-ffmpeg
@@ -82,9 +94,15 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new NotifeePackage(),
+      new ClipboardPackage(),
       new RNCMaskedViewPackage(),
       new ReactSliderPackage(),
+      new AppCenterReactNativePackage(getApplication()),
+      new AppCenterReactNativeAnalyticsPackage(getApplication(), getResources().getString(com.eduwoll.eucreiomidia.R.string.appCenterAnalytics_whenToEnableAnalytics)),
+      new AppCenterReactNativeCrashesPackage(getApplication(), getResources().getString(com.eduwoll.eucreiomidia.R.string.appCenterCrashes_whenToSendCrashes)),
       new RNBackgroundDownloaderPackage(),
+      new CodePush(getResources().getString(com.eduwoll.eucreiomidia.R.string.CodePushDeploymentKey), getApplicationContext(), com.eduwoll.eucreiomidia.BuildConfig.DEBUG),
       new DocumentPickerPackage(),
       new RNFFmpegPackage(),
       new RNFSPackage(),

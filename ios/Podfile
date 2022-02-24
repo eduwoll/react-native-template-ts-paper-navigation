@@ -14,6 +14,15 @@ target 'HelloWorld' do
 
   pod 'react-native-ffmpeg', :path => '../node_modules/react-native-ffmpeg'
 
+  pod 'RNCClipboard', :path => '../node_modules/@react-native-community/clipboard'
+
+  pod 'RNNotifee', :path => '../node_modules/@notifee/react-native'
+
+  pod 'RealmJS', :path => '../node_modules/realm'
+
+
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
   target 'HelloWorldTests' do
     inherit! :complete
     # Pods for testing

@@ -3,11 +3,14 @@ import { StackScreenProps } from "@react-navigation/stack";
 import * as React from "react";
 import { StyleSheet, View } from "react-native";
 import {
+  Button,
   Caption,
   Card,
   Divider,
   IconButton,
-  useTheme
+  Subheading,
+  TouchableRipple,
+  useTheme,
 } from "react-native-paper";
 import Video from "react-native-video";
 import { useVideo } from "../../context/create-video-context";
@@ -41,7 +44,12 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
       {videoState.source ? (
         <Video
           ref={playerRef}
-          source={{ uri: videoState.source }}
+          source={{
+            uri:
+              typeof videoState.source == "string"
+                ? videoState.source
+                : videoState.source.previewUrl,
+          }}
           resizeMode="contain"
           paused={paused}
           onEnd={() => setPaused(true)}
@@ -115,12 +123,14 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
           thumbTintColor={colors.accent}
         />
 
-        <Caption style={{ marginHorizontal: 8 }}>
-          Início:{" "}
-          {new Date(videoState.sourceStartTime * 1000)
-            .toISOString()
-            .substr(11, 8)}
-        </Caption>
+        <View style={styles.sliderTitle}>
+          <Subheading style={{ textAlign: "center" }}>Início:</Subheading>
+          <Button mode="text" onPress={() => console.log("Pressed")}>
+            {new Date(videoState.sourceStartTime * 1000)
+              .toISOString()
+              .substr(11, 8)}
+          </Button>
+        </View>
         <Slider
           style={styles.slider}
           value={videoState.sourceStartTime}
@@ -140,12 +150,14 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
           thumbTintColor={colors.primary}
         />
 
-        <Caption style={{ marginHorizontal: 8 }}>
-          Fim:{" "}
-          {new Date(videoState.sourceEndTime * 1000)
-            .toISOString()
-            .substr(11, 8)}
-        </Caption>
+        <View style={styles.sliderTitle}>
+          <Subheading style={{ textAlign: "center" }}>Fim:</Subheading>
+          <Button mode="text" onPress={() => console.log("Pressed")}>
+            {new Date(videoState.sourceEndTime * 1000)
+              .toISOString()
+              .substr(11, 8)}
+          </Button>
+        </View>
         <Slider
           style={styles.slider}
           value={duration.current - videoState.sourceEndTime}
@@ -171,7 +183,13 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-  slider: { marginVertical: 8 },
+  slider: {},
+  sliderTitle: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "baseline",
+    marginTop: 16,
+  },
 });
 
 export default CutContent;

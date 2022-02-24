@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/react-native-paper-select
+  C:\Program Files\nodejs\node.exe C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/notifee
 
 PATH: 
   C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\product\11.2.0\client_1;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\instantclient_12_1;C:\Instalações\Sybase\SQL Anywhere 8\win32;C:\Instalações\Sybase\Shared\win32;C:\Instalações\Sybase\Shared\Sybase Central 4.1;C:\Instalações\Sybase\PowerDynamo\win32;C:\Instalações\Sybase\Shared\PowerBuilder;C:\instantclient_11_2;C:\Program Files (x86)\Windows Live\Shared;C:\Users\usuario\AppData\Roaming\Python\Python37\Scripts;C:\mingw32\bin\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Users\usuario\AppData\Local\Android\Sdk\platform-tools\;C:\Users\usuario\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\usuario\AppData\Local\Programs\Python\Python36;C:\Users\usuario\AppData\Local\Microsoft\WindowsApps;C:\Users\usuario\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\usuario\AppData\Local\Programs\Azure Data Studio\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\bin;C:\Users\usuario\AppData\Local\GitHubDesktop\bin;C:\Users\usuario\AppData\Local\Microsoft\WindowsApps;C:\Users\usuario\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\usuario\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2freact-native-paper-select: Not found
+  Error: https://registry.yarnpkg.com/@types%2fnotifee: Not found
       at Request.params.callback [as _callback] (C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
       at Request.self.callback (C:\Users\usuario\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
       at Request.emit (node:events:390:28)
@@ -39,20 +39,24 @@ npm manifest:
       "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
     },
     "dependencies": {
+      "@react-native-community/clipboard": "^1.5.1",
       "@react-native-community/masked-view": "^0.1.10",
       "@react-native-community/slider": "^4.1.12",
       "@react-navigation/drawer": "^5.11.4",
       "@react-navigation/native": "^5.8.10",
       "@react-navigation/stack": "^5.12.8",
+      "@types/react-native-background-downloader": "^2.3.4",
       "axios": "^0.24.0",
+      "notifee": "^0.0.1",
       "react": "16.13.1",
       "react-native": "0.63.3",
+      "react-native-background-downloader": "^2.3.4",
       "react-native-document-picker": "^7.1.1",
       "react-native-ffmpeg": "^0.5.2",
       "react-native-fs": "^2.18.0",
       "react-native-gesture-handler": "^1.9.0",
       "react-native-paper": "^4.10.0",
-      "react-native-paper-select": "^0.1.0",
+      "react-native-paper-dropdown": "^1.0.7",
       "react-native-reanimated": "^1.13.2",
       "react-native-safe-area-context": "^3.1.9",
       "react-native-screens": "^2.15.0",
@@ -1200,6 +1204,11 @@ Lockfile:
       sudo-prompt "^9.0.0"
       wcwidth "^1.0.1"
   
+  "@react-native-community/clipboard@^1.5.1":
+    version "1.5.1"
+    resolved "https://registry.yarnpkg.com/@react-native-community/clipboard/-/clipboard-1.5.1.tgz#32abb3ea2eb91ee3f9c5fb1d32d5783253c9fabe"
+    integrity sha512-AHAmrkLEH5UtPaDiRqoULERHh3oNv7Dgs0bTC0hO5Z2GdNokAMPT5w8ci8aMcRemcwbtdHjxChgtjbeA38GBdA==
+  
   "@react-native-community/eslint-config@^1.1.0":
     version "1.1.0"
     resolved "https://registry.npmjs.org/@react-native-community/eslint-config/-/eslint-config-1.1.0.tgz"
@@ -1386,6 +1395,11 @@ Lockfile:
     version "15.7.4"
     resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.4.tgz"
     integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
+  
+  "@types/react-native-background-downloader@^2.3.4":
+    version "2.3.4"
+    resolved "https://registry.yarnpkg.com/@types/react-native-background-downloader/-/react-native-background-downloader-2.3.4.tgz#91ae0d91331de31e4becfc2dd623799b38417345"
+    integrity sha512-ZoEY9LKOTi7/kOVT/nQDDdO5oeioy0o+VcEIU0ySnT1YqCQLoChdlHL/ucDLwsPtB2sQWn/C0MBOZF3qbZtMvA==
   
   "@types/react-native-vector-icons@^6.4.6":
     version "6.4.10"
@@ -5428,6 +5442,11 @@ Lockfile:
     resolved "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz"
     integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
   
+  notifee@^0.0.1:
+    version "0.0.1"
+    resolved "https://registry.yarnpkg.com/notifee/-/notifee-0.0.1.tgz#0b06f1fc2dc03d2573a167148df0dd39faeb9ae8"
+    integrity sha512-R5DEyfQnhBR717u66Zut+Jx5MAOS4iLNSVEdsbiVcSzPH9S1gjxHEUJNnLnUmRTbvz8L8sUzhgkNMrtgm55UHg==
+  
   npm-run-path@^2.0.0:
     version "2.0.2"
     resolved "https://registry.npmjs.org/npm-run-path/-/npm-run-path-2.0.2.tgz"
@@ -5931,6 +5950,11 @@ Lockfile:
     resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
     integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
   
+  react-native-background-downloader@^2.3.4:
+    version "2.3.4"
+    resolved "https://registry.yarnpkg.com/react-native-background-downloader/-/react-native-background-downloader-2.3.4.tgz#050a94b044b0a204f1c41b9852d4d53dcefe527c"
+    integrity sha512-SqAnsf3dJ/aoj2zq8zG/qVcQZxeK3Le0PsoNQ00G/q6oDho2kHNfIOxthD/00B0t384J3u2gWurwRW8idI79zg==
+  
   react-native-document-picker@^7.1.1:
     version "7.1.1"
     resolved "https://registry.npmjs.org/react-native-document-picker/-/react-native-document-picker-7.1.1.tgz"
@@ -5967,10 +5991,10 @@ Lockfile:
     resolved "https://registry.npmjs.org/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz"
     integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
   
-  react-native-paper-select@^0.1.0:
-    version "0.1.0"
-    resolved "https://registry.yarnpkg.com/react-native-paper-select/-/react-native-paper-select-0.1.0.tgz#74a7480e1b9fe33f77c0a7c8347b16af643986f8"
-    integrity sha512-DJ4KhRL7JoQcu2vklfsUANxEynM23Qc6rTwpucDwiEaD5oZafDJeTBCm83GPeBkCt3sQcI7kCeLfelK4XdSbNw==
+  react-native-paper-dropdown@^1.0.7:
+    version "1.0.7"
+    resolved "https://registry.yarnpkg.com/react-native-paper-dropdown/-/react-native-paper-dropdown-1.0.7.tgz#64fe004b05b73ca5c781873d800ac5062b35bdc9"
+    integrity sha512-St0rZFw5sC7mbXtFCOGsyEa0fIBaG6Cfz78RsjFNzTj+rKd1i9qlDY2O7eOa2zAUEnFlL+C7FXdXUY9RUNELNw==
   
   react-native-paper@^4.10.0:
     version "4.10.0"

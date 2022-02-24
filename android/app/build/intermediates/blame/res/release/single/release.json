@@ -28,16 +28,16 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\color\\mtrl_extended_fab_bg_color_selector.xml"
     },
     {
-        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color-v23_abc_tint_seek_thumb.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\color-v23\\abc_tint_seek_thumb.xml"
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color-v23_abc_tint_seek_thumb.xml.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-v23_mtrl_popupmenu_background_dark.xml.flat",
@@ -48,24 +48,24 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\animator_design_fab_show_motion_spec.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\animator\\design_fab_show_motion_spec.xml"
-    },
-    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\animator_design_fab_show_motion_spec.xml.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\animator\\design_fab_show_motion_spec.xml"
     },
     {
-        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\animator_design_fab_hide_motion_spec.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\animator\\design_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -92,32 +92,32 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_abc_tooltip_exit.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\anim\\abc_tooltip_exit.xml"
-    },
-    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color_abc_secondary_text_material_dark.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\interpolator-v21_mtrl_fast_out_linear_in.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\interpolator-v21\\mtrl_fast_out_linear_in.xml"
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_abc_tooltip_exit.xml.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\anim\\abc_tooltip_exit.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_btn_checkbox_unchecked_to_checked_mtrl_animation.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable\\btn_checkbox_unchecked_to_checked_mtrl_animation.xml"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\interpolator-v21_mtrl_fast_out_linear_in.xml.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\interpolator-v21\\mtrl_fast_out_linear_in.xml"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_standalone_badge_gravity_bottom_end.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\xml\\standalone_badge_gravity_bottom_end.xml"
     },
     {
-        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_abc_activity_chooser_view_list_item.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_abc_activity_chooser_view_list_item.xml.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_mtrl_picker_actions.xml.flat",
@@ -149,7 +149,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -157,7 +157,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_notification_template_part_time.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\layout\\notification_template_part_time.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_test_reflow_chipgroup.xml.flat",
@@ -172,24 +172,28 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\layout-watch-v20\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_design_ic_visibility.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\drawable-xxhdpi-v4\\design_ic_visibility.png"
-    },
-    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color_mtrl_tabs_icon_color_selector.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\color\\mtrl_tabs_icon_color_selector.xml"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_design_ic_visibility.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\drawable-xxhdpi-v4\\design_ic_visibility.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_catalyst_slide_down.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\anim\\catalyst_slide_down.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\anim\\catalyst_slide_down.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_custom_dialog.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\layout\\custom_dialog.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\layout\\custom_dialog.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\animator_mtrl_card_state_list_anim.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\animator\\mtrl_card_state_list_anim.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_fetch_notification_cancel.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-mdpi-v4\\fetch_notification_cancel.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -217,7 +221,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_dev_loading_view.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\layout\\dev_loading_view.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\layout\\dev_loading_view.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
@@ -262,6 +266,10 @@
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_standalone_badge_gravity_bottom_start.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\xml\\standalone_badge_gravity_bottom_start.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_fetch_notification_cancel.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xhdpi-v4\\fetch_notification_cancel.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -388,8 +396,12 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_fetch_notification_cancel.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-hdpi-v4\\fetch_notification_cancel.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -477,7 +489,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_test_toolbar_surface.xml.flat",
@@ -554,6 +566,10 @@
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-watch-v20\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_fetch_notification_cancel.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xxxhdpi-v4\\fetch_notification_cancel.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
@@ -713,7 +729,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21_notification_template_icon_group.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_design_navigation_menu.xml.flat",
@@ -725,7 +741,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_notification_bg.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable\\notification_bg.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable\\notification_bg.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_fragment_open_enter.xml.flat",
@@ -793,7 +809,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21_notification_action.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\layout-v21\\notification_action.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\layout-v21\\notification_action.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -857,11 +873,11 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_notification_template_part_chronometer.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\layout\\notification_template_part_chronometer.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -889,7 +905,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\xml_rn_dev_preferences.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\xml\\rn_dev_preferences.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\xml\\rn_dev_preferences.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -910,6 +926,10 @@
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color_mtrl_chip_background_color.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\color\\mtrl_chip_background_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_fetch_notification_pause.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-hdpi-v4\\fetch_notification_pause.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1049,7 +1069,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_notification_tile_bg.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable\\notification_tile_bg.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1057,7 +1077,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_abc_text_cursor_material.xml.flat",
@@ -1149,7 +1169,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1157,11 +1177,11 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_catalyst_push_up_in.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\anim\\catalyst_push_up_in.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\anim\\catalyst_push_up_in.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1184,6 +1204,10 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_fetch_notification_retry.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-mdpi-v4\\fetch_notification_retry.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color_mtrl_on_primary_text_btn_text_color_selector.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\color\\mtrl_on_primary_text_btn_text_color_selector.xml"
     },
@@ -1193,7 +1217,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_mtrl_card_lowers_interpolator.xml.flat",
@@ -1210,6 +1234,10 @@
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_text_view_with_line_height_from_layout.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\layout\\text_view_with_line_height_from_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_fetch_notification_pause.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xhdpi-v4\\fetch_notification_pause.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color_mtrl_card_view_ripple.xml.flat",
@@ -1245,7 +1273,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1281,7 +1309,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -1357,7 +1385,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_materialcommunityicons.json.flat",
@@ -1441,7 +1469,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_notification_bg_low.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable\\notification_bg_low.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_design_navigation_item.xml.flat",
@@ -1458,6 +1486,10 @@
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_design_fab_background.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_fetch_notification_resume.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xxxhdpi-v4\\fetch_notification_resume.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
@@ -1492,6 +1524,10 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\layout\\mtrl_layout_snackbar_include.xml"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_fetch_notification_retry.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xxxhdpi-v4\\fetch_notification_retry.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -1522,6 +1558,10 @@
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_fetch_notification_pause.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xxxhdpi-v4\\fetch_notification_pause.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_abc_vector_test.xml.flat",
@@ -1572,6 +1612,10 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_fetch_notification_resume.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xxhdpi-v4\\fetch_notification_resume.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -1593,7 +1637,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-v21_notification_action_background.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-v21\\notification_action_background.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_mtrl_alert_dialog_actions.xml.flat",
@@ -1653,7 +1697,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_catalyst_fade_in.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\anim\\catalyst_fade_in.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\anim\\catalyst_fade_in.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_abc_ic_search_api_material.xml.flat",
@@ -1692,12 +1736,16 @@
         "source": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\node_modules\\react-native-screens\\android\\build\\intermediates\\packaged_res\\release\\anim\\rns_slide_in_from_right.xml"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_fetch_notification_pause.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xxhdpi-v4\\fetch_notification_pause.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_abc_list_menu_item_layout.xml.flat",
@@ -1748,6 +1796,10 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_fetch_notification_resume.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xhdpi-v4\\fetch_notification_resume.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color_switch_thumb_material_dark.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\color\\switch_thumb_material_dark.xml"
     },
@@ -1785,7 +1837,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_catalyst_slide_up.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\anim\\catalyst_slide_up.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\anim\\catalyst_slide_up.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v26_mtrl_calendar_month.xml.flat",
@@ -1801,7 +1853,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_catalyst_push_up_out.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\anim\\catalyst_push_up_out.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\anim\\catalyst_push_up_out.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_design_layout_tab_text.xml.flat",
@@ -1822,6 +1874,10 @@
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
         "source": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\generated\\res\\react\\release\\drawable-xxhdpi\\node_modules_reactnavigation_stack_src_views_assets_backicon.png"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_fetch_notification_pause.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-mdpi-v4\\fetch_notification_pause.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -1857,7 +1913,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v21_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color_mtrl_filled_icon_tint.xml.flat",
@@ -1908,6 +1964,10 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_fetch_notification_retry.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xhdpi-v4\\fetch_notification_retry.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-v21_abc_btn_colored_material.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
@@ -1942,6 +2002,10 @@
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color-v23_abc_tint_edittext.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_fetch_notification_retry.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xxhdpi-v4\\fetch_notification_retry.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -2005,7 +2069,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_redbox_top_border_background.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\drawable\\redbox_top_border_background.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\drawable\\redbox_top_border_background.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -2013,7 +2077,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -2044,6 +2108,10 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\color\\mtrl_outlined_stroke_color.xml"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4_fetch_notification_cancel.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-xxhdpi-v4\\fetch_notification_cancel.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_rns_slide_in_from_left.xml.flat",
         "source": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\node_modules\\react-native-screens\\android\\build\\intermediates\\packaged_res\\release\\anim\\rns_slide_in_from_left.xml"
     },
@@ -2062,6 +2130,10 @@
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_mtrl_calendar_days_of_week.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\layout\\mtrl_calendar_days_of_week.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativecodepush_package.json.flat",
+        "source": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\generated\\res\\react\\release\\raw\\node_modules_reactnativecodepush_package.json"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color_mtrl_tabs_ripple_color.xml.flat",
@@ -2089,7 +2161,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_redbox_view.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\layout\\redbox_view.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\layout\\redbox_view.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color_mtrl_btn_ripple_color.xml.flat",
@@ -2109,11 +2181,11 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_fps_view.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\layout\\fps_view.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\layout\\fps_view.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_redbox_item_title.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\layout\\redbox_item_title.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\layout\\redbox_item_title.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_ic_mtrl_chip_checked_black.xml.flat",
@@ -2281,11 +2353,15 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_catalyst_fade_out.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\anim\\catalyst_fade_out.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\anim\\catalyst_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_fetch_notification_retry.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-hdpi-v4\\fetch_notification_retry.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_design_bottom_sheet_dialog.xml.flat",
@@ -2293,7 +2369,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_notification_icon_background.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable\\notification_icon_background.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -2396,12 +2472,16 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_fetch_notification_resume.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-hdpi-v4\\fetch_notification_resume.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_mtrl_layout_snackbar.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\layout\\mtrl_layout_snackbar.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\639e914bfc1efa21e36199d3ff2c5eef\\core-1.1.0\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\b298a6449b929e26b4e6c009b0de88b9\\core-1.6.0\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
@@ -2432,6 +2512,10 @@
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_fetch_notification_resume.png.flat",
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\07eff3609936a3d80af35aa1e38901f5\\xfetch2-3.1.4\\res\\drawable-mdpi-v4\\fetch_notification_resume.png"
+    },
+    {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\color_mtrl_chip_ripple_color.xml.flat",
         "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\color\\mtrl_chip_ripple_color.xml"
     },
@@ -2457,7 +2541,7 @@
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_redbox_item_frame.xml.flat",
-        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\4eea10963662bd448a876d7acd7b6e18\\jetified-react-native-0.63.3\\res\\layout\\redbox_item_frame.xml"
+        "source": "C:\\Users\\usuario\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2bfedf656b6a3abc0c9031bdb5b78\\jetified-react-native-0.63.3\\res\\layout\\redbox_item_frame.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",

@@ -27,42 +27,42 @@ public final class R {
         public static final int fontProviderFetchTimeout = 0x7f030125;
         public static final int fontProviderPackage = 0x7f030126;
         public static final int fontProviderQuery = 0x7f030127;
-        public static final int fontStyle = 0x7f030128;
-        public static final int fontVariationSettings = 0x7f030129;
-        public static final int fontWeight = 0x7f03012a;
-        public static final int overlayImage = 0x7f0301ac;
-        public static final int placeholderImage = 0x7f0301b9;
-        public static final int placeholderImageScaleType = 0x7f0301ba;
-        public static final int pressedStateOverlayImage = 0x7f0301c0;
-        public static final int progressBarAutoRotateInterval = 0x7f0301c2;
-        public static final int progressBarImage = 0x7f0301c3;
-        public static final int progressBarImageScaleType = 0x7f0301c4;
-        public static final int retryImage = 0x7f0301cf;
-        public static final int retryImageScaleType = 0x7f0301d0;
-        public static final int roundAsCircle = 0x7f0301d3;
-        public static final int roundBottomEnd = 0x7f0301d4;
-        public static final int roundBottomLeft = 0x7f0301d5;
-        public static final int roundBottomRight = 0x7f0301d6;
-        public static final int roundBottomStart = 0x7f0301d7;
-        public static final int roundTopEnd = 0x7f0301d8;
-        public static final int roundTopLeft = 0x7f0301d9;
-        public static final int roundTopRight = 0x7f0301da;
-        public static final int roundTopStart = 0x7f0301db;
-        public static final int roundWithOverlayColor = 0x7f0301dc;
-        public static final int roundedCornerRadius = 0x7f0301dd;
-        public static final int roundingBorderColor = 0x7f0301de;
-        public static final int roundingBorderPadding = 0x7f0301df;
-        public static final int roundingBorderWidth = 0x7f0301e0;
-        public static final int ttcIndex = 0x7f030273;
-        public static final int viewAspectRatio = 0x7f030276;
+        public static final int fontStyle = 0x7f030129;
+        public static final int fontVariationSettings = 0x7f03012a;
+        public static final int fontWeight = 0x7f03012b;
+        public static final int overlayImage = 0x7f0301ae;
+        public static final int placeholderImage = 0x7f0301bb;
+        public static final int placeholderImageScaleType = 0x7f0301bc;
+        public static final int pressedStateOverlayImage = 0x7f0301c2;
+        public static final int progressBarAutoRotateInterval = 0x7f0301c4;
+        public static final int progressBarImage = 0x7f0301c5;
+        public static final int progressBarImageScaleType = 0x7f0301c6;
+        public static final int retryImage = 0x7f0301d2;
+        public static final int retryImageScaleType = 0x7f0301d3;
+        public static final int roundAsCircle = 0x7f0301d6;
+        public static final int roundBottomEnd = 0x7f0301d7;
+        public static final int roundBottomLeft = 0x7f0301d8;
+        public static final int roundBottomRight = 0x7f0301d9;
+        public static final int roundBottomStart = 0x7f0301da;
+        public static final int roundTopEnd = 0x7f0301db;
+        public static final int roundTopLeft = 0x7f0301dc;
+        public static final int roundTopRight = 0x7f0301dd;
+        public static final int roundTopStart = 0x7f0301de;
+        public static final int roundWithOverlayColor = 0x7f0301df;
+        public static final int roundedCornerRadius = 0x7f0301e0;
+        public static final int roundingBorderColor = 0x7f0301e1;
+        public static final int roundingBorderPadding = 0x7f0301e2;
+        public static final int roundingBorderWidth = 0x7f0301e3;
+        public static final int ttcIndex = 0x7f030277;
+        public static final int viewAspectRatio = 0x7f03027a;
     }
     public static final class color {
         private color() {}
 
-        public static final int notification_action_color_filter = 0x7f0500a6;
-        public static final int notification_icon_bg_color = 0x7f0500a7;
-        public static final int ripple_material_light = 0x7f0500b1;
-        public static final int secondary_text_default_material_light = 0x7f0500b3;
+        public static final int notification_action_color_filter = 0x7f0500a8;
+        public static final int notification_icon_bg_color = 0x7f0500a9;
+        public static final int ripple_material_light = 0x7f0500b3;
+        public static final int secondary_text_default_material_light = 0x7f0500b5;
     }
     public static final class dimen {
         private dimen() {}
@@ -140,18 +140,18 @@ public final class R {
         public static final int notification_main_column_container = 0x7f0800d0;
         public static final int right_icon = 0x7f0800e5;
         public static final int right_side = 0x7f0800e6;
-        public static final int tag_transition_group = 0x7f080121;
-        public static final int tag_unhandled_key_event_manager = 0x7f080122;
-        public static final int tag_unhandled_key_listeners = 0x7f080123;
-        public static final int text = 0x7f080126;
-        public static final int text2 = 0x7f080127;
-        public static final int time = 0x7f080131;
-        public static final int title = 0x7f080132;
+        public static final int tag_transition_group = 0x7f080125;
+        public static final int tag_unhandled_key_event_manager = 0x7f080126;
+        public static final int tag_unhandled_key_listeners = 0x7f080127;
+        public static final int text = 0x7f08012b;
+        public static final int text2 = 0x7f08012c;
+        public static final int time = 0x7f080136;
+        public static final int title = 0x7f080137;
     }
     public static final class integer {
         private integer() {}
 
-        public static final int status_bar_notification_info_maxnum = 0x7f090016;
+        public static final int status_bar_notification_info_maxnum = 0x7f090017;
     }
     public static final class layout {
         private layout() {}
@@ -166,7 +166,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int status_bar_notification_info_overflow = 0x7f0e0091;
+        public static final int status_bar_notification_info_overflow = 0x7f0e0097;
     }
     public static final class style {
         private style() {}
@@ -186,14 +186,15 @@ public final class R {
         public static final int ColorStateListItem_android_color = 0;
         public static final int ColorStateListItem_android_alpha = 1;
         public static final int ColorStateListItem_alpha = 2;
-        public static final int[] FontFamily = { 0x7f030122, 0x7f030123, 0x7f030124, 0x7f030125, 0x7f030126, 0x7f030127 };
+        public static final int[] FontFamily = { 0x7f030122, 0x7f030123, 0x7f030124, 0x7f030125, 0x7f030126, 0x7f030127, 0x7f030128 };
         public static final int FontFamily_fontProviderAuthority = 0;
         public static final int FontFamily_fontProviderCerts = 1;
         public static final int FontFamily_fontProviderFetchStrategy = 2;
         public static final int FontFamily_fontProviderFetchTimeout = 3;
         public static final int FontFamily_fontProviderPackage = 4;
         public static final int FontFamily_fontProviderQuery = 5;
-        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f030120, 0x7f030128, 0x7f030129, 0x7f03012a, 0x7f030273 };
+        public static final int FontFamily_fontProviderSystemFontFamily = 6;
+        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f030120, 0x7f030129, 0x7f03012a, 0x7f03012b, 0x7f030277 };
         public static final int FontFamilyFont_android_font = 0;
         public static final int FontFamilyFont_android_fontWeight = 1;
         public static final int FontFamilyFont_android_fontStyle = 2;
@@ -204,7 +205,7 @@ public final class R {
         public static final int FontFamilyFont_fontVariationSettings = 7;
         public static final int FontFamilyFont_fontWeight = 8;
         public static final int FontFamilyFont_ttcIndex = 9;
-        public static final int[] GenericDraweeHierarchy = { 0x7f030024, 0x7f030039, 0x7f030116, 0x7f030117, 0x7f030118, 0x7f0301ac, 0x7f0301b9, 0x7f0301ba, 0x7f0301c0, 0x7f0301c2, 0x7f0301c3, 0x7f0301c4, 0x7f0301cf, 0x7f0301d0, 0x7f0301d3, 0x7f0301d4, 0x7f0301d5, 0x7f0301d6, 0x7f0301d7, 0x7f0301d8, 0x7f0301d9, 0x7f0301da, 0x7f0301db, 0x7f0301dc, 0x7f0301dd, 0x7f0301de, 0x7f0301df, 0x7f0301e0, 0x7f030276 };
+        public static final int[] GenericDraweeHierarchy = { 0x7f030024, 0x7f030039, 0x7f030116, 0x7f030117, 0x7f030118, 0x7f0301ae, 0x7f0301bb, 0x7f0301bc, 0x7f0301c2, 0x7f0301c4, 0x7f0301c5, 0x7f0301c6, 0x7f0301d2, 0x7f0301d3, 0x7f0301d6, 0x7f0301d7, 0x7f0301d8, 0x7f0301d9, 0x7f0301da, 0x7f0301db, 0x7f0301dc, 0x7f0301dd, 0x7f0301de, 0x7f0301df, 0x7f0301e0, 0x7f0301e1, 0x7f0301e2, 0x7f0301e3, 0x7f03027a };
         public static final int GenericDraweeHierarchy_actualImageScaleType = 0;
         public static final int GenericDraweeHierarchy_backgroundImage = 1;
         public static final int GenericDraweeHierarchy_fadeDuration = 2;
@@ -250,7 +251,7 @@ public final class R {
         public static final int[] GradientColorItem = { 0x10101a5, 0x1010514 };
         public static final int GradientColorItem_android_color = 0;
         public static final int GradientColorItem_android_offset = 1;
-        public static final int[] SimpleDraweeView = { 0x7f030023, 0x7f030024, 0x7f030025, 0x7f030039, 0x7f030116, 0x7f030117, 0x7f030118, 0x7f0301ac, 0x7f0301b9, 0x7f0301ba, 0x7f0301c0, 0x7f0301c2, 0x7f0301c3, 0x7f0301c4, 0x7f0301cf, 0x7f0301d0, 0x7f0301d3, 0x7f0301d4, 0x7f0301d5, 0x7f0301d6, 0x7f0301d7, 0x7f0301d8, 0x7f0301d9, 0x7f0301da, 0x7f0301db, 0x7f0301dc, 0x7f0301dd, 0x7f0301de, 0x7f0301df, 0x7f0301e0, 0x7f030276 };
+        public static final int[] SimpleDraweeView = { 0x7f030023, 0x7f030024, 0x7f030025, 0x7f030039, 0x7f030116, 0x7f030117, 0x7f030118, 0x7f0301ae, 0x7f0301bb, 0x7f0301bc, 0x7f0301c2, 0x7f0301c4, 0x7f0301c5, 0x7f0301c6, 0x7f0301d2, 0x7f0301d3, 0x7f0301d6, 0x7f0301d7, 0x7f0301d8, 0x7f0301d9, 0x7f0301da, 0x7f0301db, 0x7f0301dc, 0x7f0301dd, 0x7f0301de, 0x7f0301df, 0x7f0301e0, 0x7f0301e1, 0x7f0301e2, 0x7f0301e3, 0x7f03027a };
         public static final int SimpleDraweeView_actualImageResource = 0;
         public static final int SimpleDraweeView_actualImageScaleType = 1;
         public static final int SimpleDraweeView_actualImageUri = 2;
