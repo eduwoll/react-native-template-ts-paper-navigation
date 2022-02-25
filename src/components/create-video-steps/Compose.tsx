@@ -24,14 +24,14 @@ type OutroList = {
 const introList: IntroList = [
   { label: "Nenhum", value: "" },
   { label: "Padrão", value: "padrao" },
-  { label: "Alternativa", value: "alternativo" },
+  { label: "Alternativo", value: "alternativo" },
   { label: "Hinos Especiais", value: "hinos_especiais" },
 ];
 
 const outroList: OutroList = [
   { label: "Nenhum", value: "" },
   { label: "Padrão", value: "padrao" },
-  { label: "Alternativa", value: "alternativo" },
+  { label: "Alternativo", value: "alternativo" },
 ];
 
 const Compose: React.FC = () => {

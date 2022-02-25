@@ -68,7 +68,7 @@ function VideoProvider({ children }: Props) {
     else {
       setVideoState((current) => {
         delete current.output;
-        return current;
+        return { ...current };
       });
     }
   };

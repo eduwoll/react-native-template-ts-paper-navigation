@@ -13,7 +13,7 @@ import { useVideo } from "../../context/create-video-context";
 import { getRenderCommands } from "../../utils/ffmpegHelper";
 import { finais, intros } from "../../utils/links";
 
-interface Stream {
+export interface Stream {
   path: string;
   duration: number;
 }

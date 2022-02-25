@@ -1,4 +1,4 @@
-import { Streams } from "../components/create-video-steps/RenderVideo";
+import { Stream, Streams } from "../components/create-video-steps/RenderVideo";
 
 export function getRenderCommands(
   streams: Streams,
@@ -6,9 +6,13 @@ export function getRenderCommands(
   sourceEndTime: number,
   silentIntro: boolean
 ): string[] {
-  const { intro, source, outro, sourceAudio } = streams;
+  const { intro, source: sourceAV, outro, sourceVideo, sourceAudio } = streams;
 
-  if (!source) return [];
+  console.log(streams);
+
+  if (!sourceAV && !sourceVideo) return [];
+
+  const source = (sourceAV || sourceVideo) as Stream;
 
   const result: string[] = [];
 
@@ -62,7 +66,7 @@ export function getRenderCommands(
       split=2[outro1][outro2];`;
   }
 
-  if (typeof source !== "string" && sourceAudio) {
+  if (sourceAudio) {
     result.push("-i", sourceAudio.path);
     audioIndex = currentIndex++;
   }
@@ -195,7 +199,7 @@ export function getRenderCommands(
         atrim=
           start=${sourceStartTime}:
           end=${sourceEndTime}[sourcetrimmed];
-      [${introIndex}:a][sourcetrimmed]acrossfade=d=1[a]`
+      [${introIndex}:a][sourcetrimmed]acrossfade=d=1[a]`;
     else
       fc += `
       [${audioIndex}:a]
@@ -203,7 +207,6 @@ export function getRenderCommands(
         start=${sourceStartTime}:
         end=${sourceEndTime},
       afade=in:st=0:d=1[a]`;
-    
   } else if (outro.path) {
     fc += `
     [source][crossfade2][outro]concat=n=3[v];
