@@ -11,6 +11,7 @@ import * as RNFS from "react-native-fs";
 import { Button, Caption, ProgressBar, useTheme } from "react-native-paper";
 import { useVideo } from "../../context/create-video-context";
 import { getRenderCommands } from "../../utils/ffmpegHelper";
+import { getIntroFilePath, getOutroFilePath } from "../../utils/filesHelper";
 import { finais, intros } from "../../utils/links";
 
 export interface Stream {
@@ -52,44 +53,9 @@ const RenderVideo: React.FC = () => {
       setOutput(null);
       setLoading(true);
 
-      const introsFolder = `file://${RNFS.ExternalDirectoryPath}/intros`;
-      const outrosFolder = `file://${RNFS.ExternalDirectoryPath}/finais`;
-
-      const introPath = intro ? `${introsFolder}/${intro}.mp4` : "";
-      const outroPath = outro ? `${outrosFolder}/${outro}.mp4` : "";
-
-      const pendingDownloads: Promise<any>[] = [];
-
-      if (!(await RNFS.exists(introsFolder))) {
-        await RNFS.mkdir(introsFolder);
-      }
-
-      if (!(await RNFS.exists(outrosFolder))) {
-        await RNFS.mkdir(outrosFolder);
-      }
-
-      if (!(await RNFS.exists(introPath)) && intro) {
-        pendingDownloads.push(
-          RNFS.downloadFile({
-            fromUrl: intros[intro],
-            toFile: introPath,
-          }).promise
-        );
-      }
-
-      if (!(await RNFS.exists(outroPath)) && outro) {
-        pendingDownloads.push(
-          RNFS.downloadFile({
-            fromUrl: finais[outro],
-            toFile: outroPath,
-          }).promise
-        );
-      }
-
-      if (pendingDownloads.length) {
-        setStatus("Baixando intro e final...");
-        await Promise.all(pendingDownloads);
-      }
+      setStatus("Carregando intro e final...");
+      const introPath = await getIntroFilePath(intro);
+      const outroPath = await getOutroFilePath(outro);
 
       const streams: Streams = {
         intro: {
@@ -225,26 +191,26 @@ const RenderVideo: React.FC = () => {
         streams,
         sourceStartTime,
         sourceEndTime,
-        intro === 'hinos_especiais'
+        intro === "hinos_especiais"
       );
 
       // if (false)
-        executionRef.current = await RNFFmpeg.executeAsyncWithArguments(
-          executionArray,
-          (res) => {
-            console.log(res);
-            if (res.returnCode === 0) {
-              setStatus("Concluído!");
-              setOutput(streams.output.path);
-            } else {
-              setStatus("Erro");
-            }
-            executionRef.current = undefined;
-            setLoading(false);
-            notifee.cancelNotification("download");
-            setProgress(0);
+      executionRef.current = await RNFFmpeg.executeAsyncWithArguments(
+        executionArray,
+        (res) => {
+          console.log(res);
+          if (res.returnCode === 0) {
+            setStatus("Concluído!");
+            setOutput(streams.output.path);
+          } else {
+            setStatus("Erro");
           }
-        );
+          executionRef.current = undefined;
+          setLoading(false);
+          notifee.cancelNotification("download");
+          setProgress(0);
+        }
+      );
 
       // await RNFFmpeg.executeAsync(
       //   `-i file:/${destPath} -c:v mpeg4 file2.mp4`,

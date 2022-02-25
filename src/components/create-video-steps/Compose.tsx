@@ -7,6 +7,7 @@ import {
   VideoIntro,
   VideoOutro,
 } from "../../context/create-video-context";
+import VideoPreviewDialog from "../VideoPreviewDialog";
 
 const Spacer = () => <View style={{ marginBottom: 16 }} />;
 const SmallSpacer = () => <View style={{ marginBottom: 8 }} />;
@@ -37,9 +38,12 @@ const outroList: OutroList = [
 const Compose: React.FC = () => {
   const [showDropDownIntro, setShowDropDownIntro] = React.useState(false);
   const [showDropDownFinal, setShowDropDownFinal] = React.useState(false);
+  const [showPreview, setShowPreview] = React.useState(false);
+  const [introPreview, setIntroPreview] = React.useState<VideoIntro>("");
+  const [outroPreview, setOutroPreview] = React.useState<VideoOutro>("");
   const { videoState, setIntro, setOutro } = useVideo();
 
-  console.log(videoState)
+  console.log(videoState);
 
   return (
     <View
@@ -60,7 +64,16 @@ const Compose: React.FC = () => {
         list={introList}
       />
       <SmallSpacer />
-      <Button mode="outlined" onPress={() => {}} icon="eye">
+      <Button
+        mode="outlined"
+        onPress={() => {
+          setIntroPreview(videoState.intro);
+          setOutroPreview("");
+          setShowPreview(true);
+        }}
+        icon="eye"
+        disabled={!videoState.intro}
+      >
         Ver Intro
       </Button>
       <Spacer />
@@ -75,9 +88,25 @@ const Compose: React.FC = () => {
         list={outroList}
       />
       <SmallSpacer />
-      <Button mode="outlined" onPress={() => {}} icon="eye">
+      <Button
+        mode="outlined"
+        onPress={() => {
+          setIntroPreview("");
+          setOutroPreview(videoState.outro);
+          setShowPreview(true);
+        }}
+        icon="eye"
+        disabled={!videoState.outro}
+      >
         Ver Final
       </Button>
+
+      <VideoPreviewDialog
+        visible={showPreview}
+        onDismiss={() => setShowPreview(false)}
+        intro={introPreview}
+        outro={outroPreview}
+      />
     </View>
   );
 };
