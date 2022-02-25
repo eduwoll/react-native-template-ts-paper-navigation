@@ -139,7 +139,7 @@ const TimeDialogBody: React.FC<TimeDialogProps> = function ({
         </View>
       </Dialog.Content>
       <Dialog.Actions>
-        <Button onPress={onDismiss}>Cancear</Button>
+        <Button onPress={onDismiss}>Cancelar</Button>
         <Button
           onPress={() => {
             const { hours, minutes, seconds } = timeState;

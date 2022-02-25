@@ -187,7 +187,8 @@ export function getRenderCommands(
       [${audioIndex}:a]
         atrim=
           start=${sourceStartTime}:
-          end=${sourceEndTime}[sourcetrimmed];
+          end=${sourceEndTime},
+        afade=in:st=${sourceStartTime}:d=1[sourcetrimmed];
       [sourcetrimmed][${outroIndex}:a]acrossfade=d=1[a]`;
   } else if (intro.path) {
     fc += `
@@ -206,7 +207,7 @@ export function getRenderCommands(
       atrim=
         start=${sourceStartTime}:
         end=${sourceEndTime},
-      afade=in:st=0:d=1[a]`;
+      afade=in:st=${sourceStartTime}:d=1[a]`;
   } else if (outro.path) {
     fc += `
     [source][crossfade2][outro]concat=n=3[v];
@@ -224,7 +225,7 @@ export function getRenderCommands(
       atrim=
         start=${sourceStartTime}:
         end=${sourceEndTime},
-      afade=in:st=0:d=1[a]`;
+      afade=in:st=${sourceStartTime}:d=1[a]`;
   }
 
   console.log(fc);
