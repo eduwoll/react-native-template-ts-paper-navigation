@@ -27,6 +27,7 @@ MERGED from [:react-native-screens] C:\Users\usuario\Documents\GitHub\eu-creio-m
 MERGED from [:react-native-share] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-21:12
 MERGED from [:react-native-vector-icons] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-video] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\react-native-video\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:realm] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\realm\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\usuario\.gradle\caches\transforms-2\files-2.1\9ce2bfedf656b6a3abc0c9031bdb5b78\jetified-react-native-0.63.3\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\usuario\.gradle\caches\transforms-2\files-2.1\37b6f551bc5ae153b0b627de8f563815\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\usuario\.gradle\caches\transforms-2\files-2.1\d8031ba7ad89eac391d4216992656ff2\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
@@ -138,6 +139,8 @@ MERGED from [:notifee_react-native] C:\Users\usuario\Documents\GitHub\eu-creio-m
 MERGED from [:notifee_react-native] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-17:19
 MERGED from [:react-native-share] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-19:19
 MERGED from [:react-native-share] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\react-native-share\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-19:19
+MERGED from [:realm] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\realm\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-20
+MERGED from [:realm] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\realm\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\usuario\.gradle\caches\transforms-2\files-2.1\9ce2bfedf656b6a3abc0c9031bdb5b78\jetified-react-native-0.63.3\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\usuario\.gradle\caches\transforms-2\files-2.1\9ce2bfedf656b6a3abc0c9031bdb5b78\jetified-react-native-0.63.3\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.9.0] C:\Users\usuario\.gradle\caches\transforms-2\files-2.1\c34148f30cbc3e974eff21cbfb6a112a\soloader-0.9.0\AndroidManifest.xml:11:5-20
@@ -262,6 +265,8 @@ MERGED from [:react-native-vector-icons] C:\Users\usuario\Documents\GitHub\eu-cr
 MERGED from [:react-native-vector-icons] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-video] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\react-native-video\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-video] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\react-native-video\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:realm] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\realm\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:realm] C:\Users\usuario\Documents\GitHub\eu-creio-midia\node_modules\realm\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\usuario\.gradle\caches\transforms-2\files-2.1\9ce2bfedf656b6a3abc0c9031bdb5b78\jetified-react-native-0.63.3\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.3] C:\Users\usuario\.gradle\caches\transforms-2\files-2.1\9ce2bfedf656b6a3abc0c9031bdb5b78\jetified-react-native-0.63.3\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\usuario\.gradle\caches\transforms-2\files-2.1\37b6f551bc5ae153b0b627de8f563815\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44

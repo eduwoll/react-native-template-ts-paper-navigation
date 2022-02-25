@@ -1,11 +1,11 @@
 import { DrawerNavigationProp } from "@react-navigation/drawer";
 import {
   NavigationContainer,
-  NavigationContainerRef
+  NavigationContainerRef,
 } from "@react-navigation/native";
 import {
   createStackNavigator,
-  TransitionPresets
+  TransitionPresets,
 } from "@react-navigation/stack";
 import * as React from "react";
 import { ScrollView, StyleSheet, View } from "react-native";
@@ -53,7 +53,7 @@ export default ({ navigation }: Props) => {
   const [currentStep, setCurrentStep] = React.useState(1);
   const navigatorRef = React.useRef<NavigationContainerRef>(null);
   const { videoState } = useVideo();
-  const theme = useDarkTheme().theme
+  const theme = useDarkTheme().theme;
 
   React.useEffect(() => {
     const unsubscribe = navigatorRef.current?.addListener("state", (state) => {
@@ -92,11 +92,7 @@ export default ({ navigation }: Props) => {
           style={styles.body}
           contentContainerStyle={{ flex: 1 }}
         >
-          <NavigationContainer
-            independent
-            ref={navigatorRef}
-            theme={theme}
-          >
+          <NavigationContainer independent ref={navigatorRef} theme={theme}>
             <Stack.Navigator
               screenOptions={{
                 headerShown: false,

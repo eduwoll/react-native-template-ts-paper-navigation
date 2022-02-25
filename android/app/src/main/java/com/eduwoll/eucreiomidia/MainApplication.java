@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import io.realm.react.RealmReactPackage;
 import com.microsoft.codepush.react.CodePush;
 import io.invertase.notifee.NotifeePackage;
 import com.reactnativecommunity.clipboard.ClipboardPackage;

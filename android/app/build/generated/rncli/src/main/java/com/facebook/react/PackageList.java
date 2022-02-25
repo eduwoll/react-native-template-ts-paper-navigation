@@ -49,6 +49,8 @@ import cl.json.RNSharePackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 // react-native-video
 import com.brentvatne.react.ReactVideoPackage;
+// realm
+import io.realm.react.RealmReactPackage;
 
 public class PackageList {
   private Application application;
@@ -112,7 +114,8 @@ public class PackageList {
       new RNScreensPackage(),
       new RNSharePackage(),
       new VectorIconsPackage(),
-      new ReactVideoPackage()
+      new ReactVideoPackage(),
+      new RealmReactPackage()
     ));
   }
 }

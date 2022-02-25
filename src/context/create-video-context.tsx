@@ -1,9 +1,14 @@
 import React from "react";
+import { intros, finais } from "../utils/links";
 
 export interface VideoInfo {
   link: string;
   extension: string;
 }
+
+export type VideoIntro = keyof typeof intros | "";
+
+export type VideoOutro = keyof typeof finais | "";
 
 export interface VideoInfoResponse {
   video: VideoInfo;
@@ -15,8 +20,8 @@ interface Video {
   source: null | string | { video: string; audio: string; previewUrl: string };
   sourceStartTime: number;
   sourceEndTime: number;
-  intro?: string;
-  outro?: string;
+  intro: VideoIntro;
+  outro: VideoOutro;
   output?: string;
 }
 
@@ -24,7 +29,8 @@ type VideoContextType = {
   videoState: Video;
   setSource: (source: Video["source"]) => void;
   setSourceTimes: (sourceStartTime: number, sourceEndTime: number) => void;
-  setComposition: (intro: string, outro: string) => void;
+  setIntro: (intro: VideoIntro) => void;
+  setOutro: (outro: VideoOutro) => void;
   setOutput: (output: string | null) => void;
   resetVideo: () => void;
 };
@@ -33,6 +39,8 @@ const initialState: Video = {
   source: null,
   sourceStartTime: 0,
   sourceEndTime: 0,
+  intro: "padrao",
+  outro: "padrao",
 };
 
 type Props = {
@@ -49,14 +57,19 @@ function VideoProvider({ children }: Props) {
   const setSourceTimes = (sourceStartTime: number, sourceEndTime: number) => {
     setVideoState({ ...videoState, sourceStartTime, sourceEndTime });
   };
-  const setComposition = (intro: string, outro: string) => {
-    setVideoState({ ...videoState, intro, outro });
+  const setIntro = (intro: VideoIntro) => {
+    setVideoState((current) => ({ ...current, intro }));
+  };
+  const setOutro = (outro: VideoOutro) => {
+    setVideoState((current) => ({ ...current, outro }));
   };
   const setOutput = (output: string | null) => {
-    if (output) setVideoState({ ...videoState, output });
+    if (output) setVideoState((current) => ({ ...current, output }));
     else {
-      delete videoState.output;
-      setVideoState({ ...videoState });
+      setVideoState((current) => {
+        delete current.output;
+        return current;
+      });
     }
   };
   const resetVideo = () => setVideoState(initialState);
@@ -64,7 +77,8 @@ function VideoProvider({ children }: Props) {
     videoState,
     setSource,
     setSourceTimes,
-    setComposition,
+    setIntro,
+    setOutro,
     setOutput,
     resetVideo,
   };

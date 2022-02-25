@@ -1,4 +1,4 @@
-#Thu Feb 24 11:31:14 BRT 2022
+#Thu Feb 24 22:15:08 BRT 2022
 path.4=classes_1.dex
 path.3=classes_0.dex
 path.2=classes2.dex
@@ -19,6 +19,7 @@ base.8=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\bui
 base.7=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_12.dex
 base.6=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_11.dex
 base.5=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_10.dex
+renamed.22=classes23.dex
 renamed.21=classes22.dex
 renamed.20=classes21.dex
 renamed.18=classes19.dex
@@ -41,6 +42,7 @@ base.14=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\bu
 base.19=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_7.dex
 base.18=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_6.dex
 base.20=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_8.dex
+base.22=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_19.dex
 base.21=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_9.dex
 renamed.3=classes4.dex
 path.12=classes_17.dex
@@ -65,3 +67,4 @@ path.20=classes_8.dex
 base.11=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_16.dex
 base.10=C\:\\Users\\usuario\\Documents\\GitHub\\eu-creio-midia\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_15.dex
 path.21=classes_9.dex
+path.22=classes_19.dex

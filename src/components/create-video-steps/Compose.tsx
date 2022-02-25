@@ -1,23 +1,45 @@
-import axios, { AxiosResponse } from "axios";
 import * as React from "react";
 import { View } from "react-native";
-import DocumentPicker from "react-native-document-picker";
-import * as RNFS from "react-native-fs";
 import { Button } from "react-native-paper";
 import DropDown from "react-native-paper-dropdown";
-import { useVideo } from "../../context/create-video-context";
+import {
+  useVideo,
+  VideoIntro,
+  VideoOutro,
+} from "../../context/create-video-context";
 
 const Spacer = () => <View style={{ marginBottom: 16 }} />;
 const SmallSpacer = () => <View style={{ marginBottom: 8 }} />;
 
+type IntroList = {
+  label: string;
+  value: VideoIntro;
+}[];
+
+type OutroList = {
+  label: string;
+  value: VideoOutro;
+}[];
+
+const introList: IntroList = [
+  { label: "Nenhum", value: "" },
+  { label: "Padrão", value: "padrao" },
+  { label: "Alternativa", value: "alternativo" },
+  { label: "Hinos Especiais", value: "hinos_especiais" },
+];
+
+const outroList: OutroList = [
+  { label: "Nenhum", value: "" },
+  { label: "Padrão", value: "padrao" },
+  { label: "Alternativa", value: "alternativo" },
+];
+
 const Compose: React.FC = () => {
   const [showDropDownIntro, setShowDropDownIntro] = React.useState(false);
   const [showDropDownFinal, setShowDropDownFinal] = React.useState(false);
-  const [intro, setIntro] = React.useState("0");
-  const [final, setFinal] = React.useState("0");
-  const [status, setStatus] = React.useState<string | null>(null);
-  const [downloadProgress, setDownloadProgress] = React.useState(0);
-  const { setSource } = useVideo();
+  const { videoState, setIntro, setOutro } = useVideo();
+
+  console.log(videoState)
 
   return (
     <View
@@ -33,13 +55,9 @@ const Compose: React.FC = () => {
         visible={showDropDownIntro}
         showDropDown={() => setShowDropDownIntro(true)}
         onDismiss={() => setShowDropDownIntro(false)}
-        value={intro}
+        value={videoState.intro}
         setValue={setIntro}
-        list={[
-          { label: "Padrão", value: "0" },
-          { label: "Alternativa", value: "1" },
-          { label: "Hinos Especiais", value: "2" },
-        ]}
+        list={introList}
       />
       <SmallSpacer />
       <Button mode="outlined" onPress={() => {}} icon="eye">
@@ -52,9 +70,9 @@ const Compose: React.FC = () => {
         visible={showDropDownFinal}
         showDropDown={() => setShowDropDownFinal(true)}
         onDismiss={() => setShowDropDownFinal(false)}
-        value={final}
-        setValue={setFinal}
-        list={[{ label: "Padrão", value: "0" }]}
+        value={videoState.outro}
+        setValue={setOutro}
+        list={outroList}
       />
       <SmallSpacer />
       <Button mode="outlined" onPress={() => {}} icon="eye">

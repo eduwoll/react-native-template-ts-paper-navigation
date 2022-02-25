@@ -33,13 +33,15 @@
     "react-native-gesture-handler": "^1.9.0",
     "react-native-paper": "^4.10.0",
     "react-native-paper-dropdown": "^1.0.7",
+    "react-native-queue": "^1.2.1",
     "react-native-reanimated": "^1.13.2",
     "react-native-safe-area-context": "^3.1.9",
     "react-native-screens": "^2.15.0",
     "react-native-share": "^7.2.1",
     "react-native-status-bar-height": "^2.6.0",
     "react-native-vector-icons": "^7.1.0",
-    "react-native-video": "^5.2.0"
+    "react-native-video": "^5.2.0",
+    "realm": "^10.13.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

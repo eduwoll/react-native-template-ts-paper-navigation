@@ -10,13 +10,15 @@ import {
 import * as RNFS from "react-native-fs";
 import { Button, Caption, ProgressBar, useTheme } from "react-native-paper";
 import { useVideo } from "../../context/create-video-context";
+import { getRenderCommands } from "../../utils/ffmpegHelper";
+import { finais, intros } from "../../utils/links";
 
 interface Stream {
   path: string;
   duration: number;
 }
 
-interface Streams {
+export interface Streams {
   intro: Stream;
   outro: Stream;
   source?: Stream;
@@ -33,26 +35,69 @@ const RenderVideo: React.FC = () => {
   const { colors } = useTheme();
   const executionRef = React.useRef<number>();
 
+  const { source, sourceStartTime, sourceEndTime, intro, outro } = videoState;
+
   React.useEffect(() => {
+    console.log(videoState);
     return () => {
       if (executionRef.current) RNFFmpeg.cancelExecution(executionRef.current);
     };
   }, []);
 
   const handleRenderButtonPress = async () => {
-    if (!videoState.source) return;
+    if (!source) return;
     console.log(videoState);
     try {
       if (executionRef.current) RNFFmpeg.cancelExecution(executionRef.current);
       setOutput(null);
       setLoading(true);
+
+      const introsFolder = `file://${RNFS.ExternalDirectoryPath}/intros`;
+      const outrosFolder = `file://${RNFS.ExternalDirectoryPath}/finais`;
+
+      const introPath = intro ? `${introsFolder}/${intro}.mp4` : "";
+      const outroPath = outro ? `${outrosFolder}/${outro}.mp4` : "";
+
+      const pendingDownloads: Promise<any>[] = [];
+
+      if (!(await RNFS.exists(introsFolder))) {
+        await RNFS.mkdir(introsFolder);
+      }
+
+      if (!(await RNFS.exists(outrosFolder))) {
+        await RNFS.mkdir(outrosFolder);
+      }
+
+      if (!(await RNFS.exists(introPath)) && intro) {
+        pendingDownloads.push(
+          RNFS.downloadFile({
+            fromUrl: intros[intro],
+            toFile: introPath,
+          }).promise
+        );
+      }
+
+      if (!(await RNFS.exists(outroPath)) && outro) {
+        pendingDownloads.push(
+          RNFS.downloadFile({
+            fromUrl: finais[outro],
+            toFile: outroPath,
+          }).promise
+        );
+      }
+
+      if (pendingDownloads.length) {
+        setStatus("Baixando intro e final...");
+        await Promise.all(pendingDownloads);
+      }
+
       const streams: Streams = {
         intro: {
-          path: "file://" + RNFS.ExternalDirectoryPath + "/intro.mp4",
+          path: introPath,
           duration: 0,
         },
         outro: {
-          path: "file://" + RNFS.ExternalDirectoryPath + "/outro.mp4",
+          path: outroPath,
           duration: 0,
         },
         output: {
@@ -61,50 +106,30 @@ const RenderVideo: React.FC = () => {
         },
       };
 
-      if (typeof videoState.source == "string") {
+      if (typeof source == "string") {
         streams.source = {
-          path: "file://" + videoState.source,
+          path: "file://" + source,
           duration: 0,
         };
       } else {
         streams.sourceVideo = {
-          path: "file://" + videoState.source.video,
+          path: "file://" + source.video,
           duration: 0,
         };
         streams.sourceAudio = {
-          path: "file://" + videoState.source.audio,
+          path: "file://" + source.audio,
           duration: 0,
         };
       }
 
-      const fsPromises: Promise<any>[] = [];
-
-      setStatus("Baixando intro e final...");
-      fsPromises.push(
-        RNFS.downloadFile({
-          fromUrl:
-            "https://firebasestorage.googleapis.com/v0/b/eu-creio-videos.appspot.com/o/videos%2Fintros%2Fpregacao.mp4?alt=media&token=8c85b8bf-0491-4c3a-98a1-9f07b6176c2b",
-          toFile: streams.intro.path,
-        }).promise
-      );
-
-      fsPromises.push(
-        RNFS.downloadFile({
-          fromUrl:
-            "https://firebasestorage.googleapis.com/v0/b/eu-creio-videos.appspot.com/o/videos%2Ffinais%2Fpadrao.mp4?alt=media&token=9620f949-ead6-462d-a2a9-cfde2812568e",
-          toFile: streams.outro.path,
-        }).promise
-      );
-
       try {
         await RNFS.unlink(streams.output.path);
       } catch (e) {}
-      await Promise.all(fsPromises);
       setStatus("Calculando...");
 
       function getStreamDuration(key: keyof Streams) {
         return new Promise<number>((res) => {
-          console.log;
+          console.log(key, streams[key]);
           RNFFmpegConfig.enableLogCallback((log) => res(+log.message));
           RNFFmpegConfig.setLogLevel(LogLevel.AV_LOG_QUIET);
           RNFFprobe.execute(
@@ -115,8 +140,8 @@ const RenderVideo: React.FC = () => {
         });
       }
 
-      streams.intro.duration = await getStreamDuration("intro");
-      streams.outro.duration = await getStreamDuration("outro");
+      if (introPath) streams.intro.duration = await getStreamDuration("intro");
+      if (outroPath) streams.outro.duration = await getStreamDuration("outro");
 
       var sourceDuration = 0;
       if (streams.source) {
@@ -132,8 +157,8 @@ const RenderVideo: React.FC = () => {
         streams.intro.duration +
         streams.outro.duration +
         sourceDuration -
-        videoState.sourceStartTime -
-        (sourceDuration - videoState.sourceEndTime) -
+        sourceStartTime -
+        (sourceDuration - sourceEndTime) -
         2;
 
       console.log({ streams, videoState });
@@ -151,7 +176,7 @@ const RenderVideo: React.FC = () => {
 
           console.log(currentFrame, newProgress);
           if (newProgress >= 1) return;
-          
+
           if (newProgress > oldProgress) {
             oldProgress = newProgress;
             setProgress(newProgress);
@@ -196,255 +221,30 @@ const RenderVideo: React.FC = () => {
         }
       });
 
-      var executionArray: string[] = [];
-
-      if (streams.source)
-        executionArray = [
-          "-i",
-          streams.intro.path,
-          "-i",
-          streams.source.path,
-          "-i",
-          streams.outro.path,
-          "-filter_complex",
-          `
-        [0:v]
-          scale=1280:720:force_original_aspect_ratio=decrease,
-          pad=1280:720:-1:-1:color=black,
-          setdar=16/9,
-          settb=AVTB,
-          fps=30/1,
-          split=2[intro1][intro2];
-        [1:v]
-          scale=1280:720:force_original_aspect_ratio=decrease,
-          pad=1280:720:-1:-1:color=black,
-          setdar=16/9,
-          settb=AVTB,
-          fps=30/1,
-          split=3[source1][source2][source3];
-        [2:v]
-          scale=1280:720:force_original_aspect_ratio=decrease,
-          pad=1280:720:-1:-1:color=black,
-          setdar=16/9,
-          settb=AVTB,
-          fps=30/1,
-          split=2[outro1][outro2];
-        [intro1]
-          trim=
-            start=0:
-            end=${streams.intro.duration - 1},
-          setpts=PTS-STARTPTS[intro];  
-        [intro2]
-          trim=
-            start=${streams.intro.duration - 1},
-          setpts=PTS-STARTPTS[introfadeout]; 
-        [source1]
-          trim=
-            start=${videoState.sourceStartTime}:
-            end=${videoState.sourceStartTime + 1},
-            setpts=PTS-STARTPTS[sourcefadein];
-        [source2]
-          trim=
-            start=${videoState.sourceStartTime + 1}:
-            end=${videoState.sourceEndTime - 1},
-          setpts=PTS-STARTPTS[source]; 
-        [sourcefadein]
-          format=pix_fmts=yuva420p,
-          fade=
-            t=in:
-            st=0:
-            d=1:
-            alpha=1[fadein];
-        [introfadeout]
-          format=pix_fmts=yuva420p,
-          fade=
-            t=out:
-            st=0:
-            d=1:
-            alpha=1[fadeout];
-        [fadein]fifo[fadeinfifo];
-        [fadeout]fifo[fadeoutfifo];
-        [fadeoutfifo][fadeinfifo]overlay[crossfade];
-
-        [source3]
-          trim=
-            start=${videoState.sourceEndTime - 1}:
-            end=${videoState.sourceEndTime},
-          setpts=PTS-STARTPTS[sourcefadeout]; 
-        [outro2]
-          trim=
-            start=0:
-            end=1,
-          setpts=PTS-STARTPTS[outrofadein];
-        [outro1]
-          trim=
-            start=1,
-          setpts=PTS-STARTPTS[outro];  
-        [outrofadein]
-          format=pix_fmts=yuva420p,
-          fade=
-            t=in:
-            st=0:
-            d=1:
-            alpha=1[fadein2];
-        [sourcefadeout]
-          format=pix_fmts=yuva420p,
-          fade=
-            t=out:
-            st=0:
-            d=1:
-            alpha=1[fadeout2];
-        [fadein2]fifo[fadeinfifo2];
-        [fadeout2]fifo[fadeoutfifo2];
-        [fadeoutfifo2][fadeinfifo2]overlay[crossfade2];
-        [intro][crossfade][source][crossfade2][outro]concat=n=5[v];
-
-        [1:a]
-          atrim=
-            start=${videoState.sourceStartTime}:
-            end=${videoState.sourceEndTime}[sourcetrimmed];
-        [0:a][sourcetrimmed]acrossfade=d=1[introsource];
-        [introsource][2:a]acrossfade=d=1[a]
-        `.replace(/[\n\ ]/gm, ""),
-          "-map",
-          "[v]",
-          "-map",
-          "[a]",
-          streams.output.path,
-        ];
-      else if (streams.sourceVideo && streams.sourceAudio)
-        executionArray = [
-          "-i",
-          streams.intro.path,
-          "-i",
-          streams.sourceVideo.path,
-          "-i",
-          streams.outro.path,
-          "-i",
-          streams.sourceAudio.path,
-          "-filter_complex",
-          `
-          [0:v]
-          scale=1280:720:force_original_aspect_ratio=decrease,
-          pad=1280:720:-1:-1:color=black,
-          setdar=16/9,
-          settb=AVTB,
-          fps=30/1,
-          split=2[intro1][intro2];
-        [1:v]
-          scale=1280:720:force_original_aspect_ratio=decrease,
-          pad=1280:720:-1:-1:color=black,
-          setdar=16/9,
-          settb=AVTB,
-          fps=30/1,
-          split=3[sourceVideo1][sourceVideo2][sourceVideo3];
-        [2:v]
-          scale=1280:720:force_original_aspect_ratio=decrease,
-          pad=1280:720:-1:-1:color=black,
-          setdar=16/9,
-          settb=AVTB,
-          fps=30/1,
-          split=2[outro1][outro2];
-        [intro1]
-          trim=
-            start=0:
-            end=${streams.intro.duration - 1},
-          setpts=PTS-STARTPTS[intro];  
-        [intro2]
-          trim=
-            start=${streams.intro.duration - 1},
-          setpts=PTS-STARTPTS[introfadeout]; 
-        [sourceVideo1]
-          trim=
-            start=${videoState.sourceStartTime}:
-            end=${videoState.sourceStartTime + 1},
-            setpts=PTS-STARTPTS[sourcefadein];
-        [sourceVideo2]
-          trim=
-            start=${videoState.sourceStartTime + 1}:
-            end=${videoState.sourceEndTime - 1},
-          setpts=PTS-STARTPTS[source]; 
-        [sourcefadein]
-          format=pix_fmts=yuva420p,
-          fade=
-            t=in:
-            st=0:
-            d=1:
-            alpha=1[fadein];
-        [introfadeout]
-          format=pix_fmts=yuva420p,
-          fade=
-            t=out:
-            st=0:
-            d=1:
-            alpha=1[fadeout];
-        [fadein]fifo[fadeinfifo];
-        [fadeout]fifo[fadeoutfifo];
-        [fadeoutfifo][fadeinfifo]overlay[crossfade];
-  
-        [sourceVideo3]
-          trim=
-            start=${videoState.sourceEndTime - 1}:
-            end=${videoState.sourceEndTime},
-          setpts=PTS-STARTPTS[sourcefadeout]; 
-        [outro2]
-          trim=
-            start=0:
-            end=1,
-          setpts=PTS-STARTPTS[outrofadein];
-        [outro1]
-          trim=
-            start=1,
-          setpts=PTS-STARTPTS[outro];  
-        [outrofadein]
-          format=pix_fmts=yuva420p,
-          fade=
-            t=in:
-            st=0:
-            d=1:
-            alpha=1[fadein2];
-        [sourcefadeout]
-          format=pix_fmts=yuva420p,
-          fade=
-            t=out:
-            st=0:
-            d=1:
-            alpha=1[fadeout2];
-        [fadein2]fifo[fadeinfifo2];
-        [fadeout2]fifo[fadeoutfifo2];
-        [fadeoutfifo2][fadeinfifo2]overlay[crossfade2];
-        [intro][crossfade][source][crossfade2][outro]concat=n=5[v];
-  
-        [3:a]
-          atrim=
-            start=${videoState.sourceStartTime}:
-            end=${videoState.sourceEndTime}[sourcetrimmed];
-        [0:a][sourcetrimmed]acrossfade=d=1[introsource];
-        [introsource][2:a]acrossfade=d=1[a]
-        `.replace(/[\n\ ]/gm, ""),
-          "-map",
-          "[v]",
-          "-map",
-          "[a]",
-          streams.output.path,
-        ];
-
-      executionRef.current = await RNFFmpeg.executeAsyncWithArguments(
-        executionArray,
-        (res) => {
-          console.log(res);
-          if (res.returnCode === 0) {
-            setStatus("Concluído!");
-            setOutput(streams.output.path);
-          } else {
-            setStatus("Erro");
-          }
-          executionRef.current = undefined;
-          setLoading(false);
-          notifee.cancelNotification("download");
-          setProgress(0);
-        }
+      const executionArray: string[] = getRenderCommands(
+        streams,
+        sourceStartTime,
+        sourceEndTime,
+        intro === 'hinos_especiais'
       );
+
+      // if (false)
+        executionRef.current = await RNFFmpeg.executeAsyncWithArguments(
+          executionArray,
+          (res) => {
+            console.log(res);
+            if (res.returnCode === 0) {
+              setStatus("Concluído!");
+              setOutput(streams.output.path);
+            } else {
+              setStatus("Erro");
+            }
+            executionRef.current = undefined;
+            setLoading(false);
+            notifee.cancelNotification("download");
+            setProgress(0);
+          }
+        );
 
       // await RNFFmpeg.executeAsync(
       //   `-i file:/${destPath} -c:v mpeg4 file2.mp4`,

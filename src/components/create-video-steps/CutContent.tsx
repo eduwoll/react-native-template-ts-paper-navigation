@@ -1,4 +1,4 @@
-import Slider from "@react-native-community/slider";
+import Slider, { SliderRef } from "@react-native-community/slider";
 import { StackScreenProps } from "@react-navigation/stack";
 import * as React from "react";
 import { StyleSheet, View } from "react-native";
@@ -14,12 +14,13 @@ import {
 } from "react-native-paper";
 import Video from "react-native-video";
 import { useVideo } from "../../context/create-video-context";
+import TimeDialog, { TimeDialogParams } from "../TimeDialog";
 
-interface VideoState {
-  startTime: number;
-  endTime: number;
-  currentTime: number;
-}
+const initialTimeDialogParams: TimeDialogParams = {
+  visible: false,
+  id: "",
+  time: 0,
+};
 
 const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
   const { videoState, setSourceTimes } = useVideo();
@@ -27,6 +28,8 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
   const playerRef: React.ClassAttributes<Video>["ref"] = React.useRef(null);
   const duration = React.useRef<number>(0);
   const [currentTime, setCurrentTime] = React.useState<number>(0);
+  const [timeDialogParams, setTimeDialogParams] =
+    React.useState<TimeDialogParams>(initialTimeDialogParams);
   const currentTimeRef = React.useRef<number>(0);
   const startTime = React.useRef<number>(0);
   const endTime = React.useRef<number>(0);
@@ -38,6 +41,7 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
       setPaused(true);
     });
   }, []);
+
 
   return (
     <Card style={{ margin: 16, flex: 1 }}>
@@ -125,7 +129,17 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
 
         <View style={styles.sliderTitle}>
           <Subheading style={{ textAlign: "center" }}>Início:</Subheading>
-          <Button mode="text" onPress={() => console.log("Pressed")}>
+          <Button
+            mode="text"
+            onPress={() => {
+              setPaused(true);
+              setTimeDialogParams({
+                visible: true,
+                id: "start",
+                time: videoState.sourceStartTime,
+              });
+            }}
+          >
             {new Date(videoState.sourceStartTime * 1000)
               .toISOString()
               .substr(11, 8)}
@@ -138,9 +152,18 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
             startTime.current = value;
           }}
           onTouchEnd={() => {
-            if (startTime.current > currentTime)
+            if (startTime.current > currentTime) {
               setSourceTimes(currentTime, videoState.sourceEndTime);
-            else setSourceTimes(startTime.current, videoState.sourceEndTime);
+              return;
+            }
+            if (startTime.current >= videoState.sourceEndTime - 1) {
+              setSourceTimes(
+                videoState.sourceEndTime - 1,
+                videoState.sourceEndTime
+              );
+              return;
+            }
+            setSourceTimes(startTime.current, videoState.sourceEndTime);
           }}
           onTouchStart={() => setPaused(true)}
           minimumValue={0}
@@ -152,7 +175,17 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
 
         <View style={styles.sliderTitle}>
           <Subheading style={{ textAlign: "center" }}>Fim:</Subheading>
-          <Button mode="text" onPress={() => console.log("Pressed")}>
+          <Button
+            mode="text"
+            onPress={() => {
+              setPaused(true);
+              setTimeDialogParams({
+                visible: true,
+                id: "end",
+                time: videoState.sourceEndTime,
+              });
+            }}
+          >
             {new Date(videoState.sourceEndTime * 1000)
               .toISOString()
               .substr(11, 8)}
@@ -166,9 +199,18 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
           }}
           inverted
           onTouchEnd={() => {
-            if (endTime.current < currentTime)
+            if (endTime.current < currentTime) {
               setSourceTimes(videoState.sourceStartTime, currentTime);
-            else setSourceTimes(videoState.sourceStartTime, endTime.current);
+              return;
+            }
+            if (endTime.current < videoState.sourceStartTime + 1) {
+              setSourceTimes(
+                videoState.sourceStartTime,
+                videoState.sourceStartTime + 1
+              );
+              return;
+            }
+            setSourceTimes(videoState.sourceStartTime, endTime.current);
           }}
           onTouchStart={() => setPaused(true)}
           minimumValue={0}
@@ -178,17 +220,40 @@ const CutContent: React.FC<StackScreenProps<{}>> = ({ navigation }) => {
           thumbTintColor={colors.primary}
         />
       </Card.Content>
+      <TimeDialog
+        onConfirm={(time, id) => {
+          if (id === "start") {
+            if (time >= videoState.sourceEndTime)
+              time = videoState.sourceEndTime - 1;
+
+            setSourceTimes(time, videoState.sourceEndTime);
+            if (time > currentTime) setCurrentTime(time);
+          }
+          if (id === "end") {
+            if (time >= duration.current) time = duration.current;
+            if (time <= videoState.sourceStartTime)
+              time = videoState.sourceStartTime + 1;
+
+            setSourceTimes(videoState.sourceStartTime, time);
+            if (time < currentTime) setCurrentTime(videoState.sourceStartTime);
+          }
+
+          setTimeDialogParams(initialTimeDialogParams);
+        }}
+        onDismiss={() => setTimeDialogParams(initialTimeDialogParams)}
+        params={timeDialogParams}
+      />
     </Card>
   );
 };
 
 const styles = StyleSheet.create({
-  slider: {},
+  slider: { marginBottom: 8 },
   sliderTitle: {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "baseline",
-    marginTop: 16,
+    marginTop: 8,
   },
 });
 
