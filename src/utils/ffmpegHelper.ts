@@ -1,4 +1,10 @@
 import { Stream, Streams } from "../components/create-video-steps/RenderVideo";
+import { intros } from "./links";
+
+export const silentIntroNames: Array<keyof typeof intros | ""> = [
+  "hinos",
+  "hinos_especiais",
+];
 
 export function getRenderCommands(
   streams: Streams,
@@ -24,6 +30,13 @@ export function getRenderCommands(
 
   var fc = "";
 
+  const contentDuration = sourceEndTime - sourceStartTime;
+
+  const totalDuration =
+    contentDuration +
+    (intro.path && !silentIntro ? intro.duration : 0) +
+    (outro.path ? outro.duration : 0);
+
   if (intro.path) {
     result.push("-i", intro.path);
     introIndex = currentIndex++;
@@ -37,7 +50,10 @@ export function getRenderCommands(
       split=2[intro1][intro2];`;
   }
 
+  result.push("-ss", `${sourceStartTime}`);
   result.push("-i", source.path);
+  result.push("-t", `${totalDuration}`);
+
   sourceIndex = currentIndex++;
   audioIndex = sourceIndex;
   fc += `
@@ -48,9 +64,9 @@ export function getRenderCommands(
     settb=AVTB,
     fps=30/1`;
   if (intro.path && outro.path)
-    fc += `,split=3[source1][source2][source_body];`;
-  else if (intro.path) fc += `,split=2[source1][source_body];`;
-  else if (outro.path) fc += `,split=2[source2][source_body];`;
+    fc += `,split=3[source_in][source_body][source_out];`;
+  else if (intro.path) fc += `,split=2[source_in][source_body];`;
+  else if (outro.path) fc += `,split=2[source_body][source_out];`;
   else fc += `[source_body];`;
 
   if (outro.path) {
@@ -67,7 +83,9 @@ export function getRenderCommands(
   }
 
   if (sourceAudio) {
+    result.push("-ss", `${sourceStartTime}`);
     result.push("-i", sourceAudio.path);
+    result.push("-t", `${totalDuration}`);
     audioIndex = currentIndex++;
   }
 
@@ -77,33 +95,34 @@ export function getRenderCommands(
       trim=
         start=0:
         end=${streams.intro.duration - 1},
-      setpts=PTS-STARTPTS[intro];  
+      setpts=PTS-STARTPTS[intro];
     [intro2]
       trim=
         start=${streams.intro.duration - 1},
       setpts=PTS-STARTPTS[introfadeout]; `;
 
     if (!silentIntro)
-      fc += `[source1]
-    trim=
-      start=${sourceStartTime}:
-      end=${sourceStartTime + 1},
-      setpts=PTS-STARTPTS[sourcefadein];
-  [source_body]
-    trim=
-      start=${sourceStartTime + 1}:
-      end=${outro.path ? sourceEndTime - 1 : sourceEndTime},
-    setpts=PTS-STARTPTS[source];`;
-    else {
-      fc += `[source1]
+      fc += `[source_in]
         trim=
-          start=${sourceStartTime + intro.duration}:
-          end=${sourceStartTime + intro.duration + 1},
+          end=1,
           setpts=PTS-STARTPTS[sourcefadein];
       [source_body]
+        ${!outro.path ? `fade=t=out:st=${contentDuration - 2}:d=2,` : ""}
         trim=
-          start=${sourceStartTime + intro.duration + 1}:
-          end=${outro.path ? sourceEndTime - 1 : sourceEndTime},
+          start=1:
+          end=${outro.path ? contentDuration - 1 : contentDuration},
+        setpts=PTS-STARTPTS[source];`;
+    else {
+      fc += `[source_in]
+        trim=
+          start=${intro.duration - 1}:
+          end=${intro.duration},
+          setpts=PTS-STARTPTS[sourcefadein];
+      [source_body]
+        ${!outro.path ? `fade=t=out:st=${contentDuration - 2}:d=2,` : ""}
+        trim=
+          start=${intro.duration}:
+          end=${outro.path ? contentDuration - 1 : contentDuration},
         setpts=PTS-STARTPTS[source];`;
     }
 
@@ -128,18 +147,18 @@ export function getRenderCommands(
   } else {
     fc += `
     [source_body]
+      ${!outro.path ? `fade=t=out:st=${contentDuration - 2}:d=2,` : ""}
       trim=
-        start=${sourceStartTime}:
-        end=${outro.path ? sourceEndTime - 1 : sourceEndTime},
+        end=${outro.path ? contentDuration - 1 : contentDuration},
         setpts=PTS-STARTPTS[source]; `;
   }
 
   if (outro.path) {
     fc += `
-    [source2]
+    [source_out]
       trim=
-        start=${sourceEndTime - 1}:
-        end=${sourceEndTime},
+        start=${contentDuration - 1}:
+        end=${contentDuration},
       setpts=PTS-STARTPTS[sourcefadeout];
 
     [outro2]
@@ -178,17 +197,15 @@ export function getRenderCommands(
       fc += `
       [${audioIndex}:a]
         atrim=
-          start=${sourceStartTime}:
-          end=${sourceEndTime}[sourcetrimmed];
+          end=${contentDuration}[sourcetrimmed];
       [${introIndex}:a][sourcetrimmed]acrossfade=d=1[introsource];
       [introsource][${outroIndex}:a]acrossfade=d=1[a]`;
     else
       fc += `
       [${audioIndex}:a]
         atrim=
-          start=${sourceStartTime}:
-          end=${sourceEndTime},
-        afade=in:st=${sourceStartTime}:d=1[sourcetrimmed];
+          end=${contentDuration},
+        afade=in:st=0:d=1[sourcetrimmed];
       [sourcetrimmed][${outroIndex}:a]acrossfade=d=1[a]`;
   } else if (intro.path) {
     fc += `
@@ -197,38 +214,40 @@ export function getRenderCommands(
     if (!silentIntro)
       fc += `
       [${audioIndex}:a]
+        afade=t=out:st=${contentDuration - 2}:d=2,
         atrim=
-          start=${sourceStartTime}:
-          end=${sourceEndTime}[sourcetrimmed];
+          end=${contentDuration}[sourcetrimmed];
       [${introIndex}:a][sourcetrimmed]acrossfade=d=1[a]`;
     else
       fc += `
       [${audioIndex}:a]
-      atrim=
-        start=${sourceStartTime}:
-        end=${sourceEndTime},
-      afade=in:st=${sourceStartTime}:d=1[a]`;
+        afade=t=out:st=${contentDuration - 2}:d=2,
+        atrim=
+          end=${contentDuration},
+        afade=in:st=0:d=1[a]`;
   } else if (outro.path) {
     fc += `
     [source][crossfade2][outro]concat=n=3[v];
 
     [${audioIndex}:a]
-      atrim=
-        start=${sourceStartTime}:
-        end=${sourceEndTime}[sourcetrimmed];
+    atrim=
+      end=${contentDuration},
+    afade=in:st=0:d=1[sourcetrimmed];
     [sourcetrimmed][${outroIndex}:a]acrossfade=d=1[a]`;
   } else {
     fc += `
     [source]split=1[v];
 
     [${audioIndex}:a]
-      atrim=
-        start=${sourceStartTime}:
-        end=${sourceEndTime},
-      afade=in:st=${sourceStartTime}:d=1[a]`;
+        afade=t=out:st=${contentDuration - 2}:d=2,
+        atrim=
+        end=${contentDuration},
+      afade=in:st=0:d=1[a]`;
   }
 
   console.log(fc);
+
+  // return [];
 
   result.push(
     "-filter_complex",

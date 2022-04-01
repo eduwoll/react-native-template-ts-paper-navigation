@@ -7,6 +7,7 @@ import {
   VideoIntro,
   VideoOutro,
 } from "../../context/create-video-context";
+import { silentIntroNames } from "../../utils/ffmpegHelper";
 import VideoPreviewDialog from "../VideoPreviewDialog";
 
 const Spacer = () => <View style={{ marginBottom: 16 }} />;
@@ -26,7 +27,7 @@ const introList: IntroList = [
   { label: "Nenhum", value: "" },
   { label: "Padrão", value: "padrao" },
   { label: "Alternativo", value: "alternativo" },
-  { label: "Hinos Especiais", value: "hinos_especiais" },
+  { label: "Hinos", value: "hinos" },
 ];
 
 const outroList: OutroList = [
@@ -43,7 +44,11 @@ const Compose: React.FC = () => {
   const [outroPreview, setOutroPreview] = React.useState<VideoOutro>("");
   const { videoState, setIntro, setOutro } = useVideo();
 
-  console.log(videoState);
+  const outroDisabled = silentIntroNames.includes(videoState.intro);
+
+  React.useEffect(() => {
+    if (outroDisabled) setOutro("");
+  }, [outroDisabled]);
 
   return (
     <View
@@ -81,11 +86,12 @@ const Compose: React.FC = () => {
         label={"Final"}
         mode={"outlined"}
         visible={showDropDownFinal}
-        showDropDown={() => setShowDropDownFinal(true)}
+        showDropDown={() => (!outroDisabled ? setShowDropDownFinal(true) : {})}
         onDismiss={() => setShowDropDownFinal(false)}
         value={videoState.outro}
         setValue={setOutro}
         list={outroList}
+        inputProps={{ disabled: outroDisabled }}
       />
       <SmallSpacer />
       <Button

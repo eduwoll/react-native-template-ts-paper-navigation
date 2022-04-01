@@ -5,6 +5,8 @@ export const intros = {
     "https://firebasestorage.googleapis.com/v0/b/eu-creio-videos.appspot.com/o/videos%2Fintros%2Falternativo.mp4?alt=media&token=edcfb8c6-5b50-4d31-8628-e4aa5aa0e1cd",
   hinos_especiais:
     "https://firebasestorage.googleapis.com/v0/b/eu-creio-videos.appspot.com/o/videos%2Fintros%2Fhinos_especiais.mp4?alt=media&token=d0682617-a3cb-4e0c-bfd1-43ea2536981d",
+  hinos:
+    "https://firebasestorage.googleapis.com/v0/b/eu-creio-videos.appspot.com/o/videos%2Fintros%2Fhinos.mp4?alt=media&token=beee97f2-771f-42d3-b40c-e995fb4d98e6",
 };
 
 export const finais = {

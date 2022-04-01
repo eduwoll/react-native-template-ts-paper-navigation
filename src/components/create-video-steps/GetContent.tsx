@@ -118,11 +118,29 @@ const GetContent: React.FC = () => {
     setLoading(false);
   };
 
+  var before = new Date().getTime();
+  var oldBytes = 0;
+
   const updateProgress = (
     progress: number,
     totalBytes: number,
     bytesWritten: number
   ) => {
+    const now = new Date().getTime();
+
+    const elapsedTime = (now - before) / 1000;
+    const downloaded = (bytesWritten - oldBytes) / 1024 / 1024;
+
+    const speed = downloaded / elapsedTime;
+
+    const speedText =
+      speed < 1
+        ? (speed * 1024).toFixed(0) + " KB/s"
+        : speed.toFixed(2) + " MB/s";
+
+    before = now;
+    oldBytes = bytesWritten;
+
     setDownloadProgress(progress);
     setStatus(
       `Baixando vídeo: ${(progress * 100).toFixed(1)}%
@@ -130,7 +148,7 @@ ${(bytesWritten / 1024 / 1024).toFixed(2)} de ${(
         totalBytes /
         1024 /
         1024
-      ).toFixed(2)} MB`
+      ).toFixed(2)} MB @ ${speedText}`
     );
     notifee.displayNotification({
       id: "download",
@@ -202,7 +220,7 @@ ${(bytesWritten / 1024 / 1024).toFixed(2)} de ${(
         .begin((expectedBytes) => {
           console.log(`Video: ${(expectedBytes / 1024 / 1024).toFixed(2)} Mb`);
         })
-        .progress((progress) => {
+        .progress(async (progress) => {
           if (!videoDownloadRef.current.video) return;
 
           const bytesWritten = videoDownloadRef.current.audio
@@ -236,7 +254,7 @@ ${(bytesWritten / 1024 / 1024).toFixed(2)} de ${(
         .begin((expectedBytes) => {
           console.log(`Audio: ${(expectedBytes / 1024 / 1024).toFixed(2)} Mb`);
         })
-        .progress((progress) => {
+        .progress(async (progress) => {
           if (!videoDownloadRef.current.audio) return;
 
           const bytesWritten = videoDownloadRef.current.video

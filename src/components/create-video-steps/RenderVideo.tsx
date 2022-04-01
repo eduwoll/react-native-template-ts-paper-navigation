@@ -10,7 +10,7 @@ import {
 import * as RNFS from "react-native-fs";
 import { Button, Caption, ProgressBar, useTheme } from "react-native-paper";
 import { useVideo } from "../../context/create-video-context";
-import { getRenderCommands } from "../../utils/ffmpegHelper";
+import { getRenderCommands, silentIntroNames } from "../../utils/ffmpegHelper";
 import { getIntroFilePath, getOutroFilePath } from "../../utils/filesHelper";
 import { finais, intros } from "../../utils/links";
 
@@ -191,7 +191,7 @@ const RenderVideo: React.FC = () => {
         streams,
         sourceStartTime,
         sourceEndTime,
-        intro === "hinos_especiais"
+        silentIntroNames.includes(intro)
       );
 
       // if (false)
